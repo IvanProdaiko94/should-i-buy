@@ -1,0 +1,11 @@
+<div>
+  <label for="ticker">Enter Ticker:</label>
+  <input type="text" id="ticker" [(ngModel)]="ticker" />
+  <button (click)="fetchStockData()">Fetch Data</button>
+</div>
+
+<div style="display: block">
+  <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"
+          [legend]="chartLegend" [chartType]="chartType" [colors]="chartColors" [plugins]="chartPlugins">
+  </canvas>
+</div>

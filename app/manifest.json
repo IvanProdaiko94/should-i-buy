@@ -1,0 +1,27 @@
+{
+    // Comments are accepted in the manifest, even though it is JSON.
+    "manifest_version": 3,
+    "name": "Chrome Extension v3 Starter",
+    "description": "A minimal example of a chrome extension using manifest v3",
+    "version": "0.0.1",
+    "icons": {
+        "16": "assets/logo-16.png",
+        "48": "assets/logo-48.png",
+        "128": "assets/logo-128.png"
+    },
+    "action": {
+        "default_title": "Chrome Addon v3 Starter",
+        "default_popup": "index.html"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "service_worker/service-worker.js"
+    },
+    "content_scripts": [{
+        "js": ["main-B7DHTKYY.js", "polyfills-LZBJRJJE.js"],
+        "matches": ["https://github.com/*"]
+    }]
+}
