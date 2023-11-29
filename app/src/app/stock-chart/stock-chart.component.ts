@@ -6,7 +6,7 @@ import { StockService } from '../services/stock.service';
 @Component({
   selector: 'app-stock-chart',
   templateUrl: './stock-chart.component.html',
-  styleUrls: ['./stock-chart.component.css'],
+  styleUrls: ['./stock-chart.component.scss'],
 })
 export class StockChartComponent implements OnInit {
   ticker: string = '';

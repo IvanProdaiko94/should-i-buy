@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-hashing=none",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "ext": "npm run build && cp manifest.json ./dist/app/browser/manifest.json && cp -r ./service_worker ./dist/app/browser/"
